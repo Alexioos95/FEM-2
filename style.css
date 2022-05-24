@@ -9,24 +9,21 @@ main {
     min-width: 100vh;
 }
 
-#wrap {
+.wrap {
     background: hsl(216, 50%, 16%);
     height: 596px;
     width: 350px;
     margin-top: 143px;
     border: 1px solid hsl(217, 54%, 11%);
     border-radius: 16px;
-}
-
-#picture {
+    
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
-img {
+#pic-equi {
     height: 302px;
     width: 302px;
-    margin-top: 24px;
     border-radius: 9px;
 }
 
@@ -35,8 +32,6 @@ h1 {
     font-family: "Outfit";
     font-weight: 600;
     font-size: 22px;
-    margin-top: 24px;
-    margin-left: 24px;
 }
 
 p {
@@ -44,5 +39,8 @@ p {
     font-weight: 400;
     color: hsl(215, 51%, 70%);
     font-size: 18px;
-    margin-left: 24px;
+}
+
+#txt-eth {
+    color: hsl(178, 100%, 50%);
 }
