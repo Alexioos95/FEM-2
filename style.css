@@ -1,0 +1,152 @@
+/** GENERAL **/
+* {
+    box-sizing: border-box;
+}
+body {
+    background: hsl(217, 54%, 11%);
+    font-family: "Outfit", sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 144px;
+    padding: 24px;
+    background: hsl(216, 50%, 16%);
+    border-radius: 16px;
+    box-shadow: 0px 25px 30px 15px hsl(215, 70%, 10%);
+}
+
+/** MAIN PICTURE **/
+.image-equi {
+    width: 302px;
+    border-radius: 9px;
+}
+.div-eye {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 302px;
+    height: 302px;
+    background: rgb(70, 255, 255, 0.6);
+    border-radius: 9px;
+    opacity: 0;
+}
+.div-eye:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+/** TITLE & SUBTITLE **/
+h1 {
+    margin: 24px 0px -2px 0px;
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    font-weight: 600;
+}
+h1:hover, mark:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+p, span {
+    font-size: 18px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+h1 + p {
+    line-height: 26px;
+}
+/** PRICE & TIME **/
+.price-and-time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+.image-eth {
+    padding-right: 3px;
+    position: relative;
+    top: 15%;
+}
+.text-eth {
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+.image-time {
+    padding-right: 3px;
+    position: relative;
+    top: 15%;
+}
+.text-time {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 1px;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    margin-top: 24px;
+    background: hsl(215, 32%, 27%);
+}
+/** CREATOR **/
+.creator {
+    display: flex;
+    padding-top: 16px;
+}
+.image-creator {
+    width: 33px;
+    height: 33px;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+.text-creator {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 6px;
+    padding-left: 16px;
+}
+mark {
+    color: white;
+    padding-left: 1px;
+    background: none;
+}
+
+@media only screen and (max-width: 500px)  {
+    .wrap {
+        width: 327px;
+        margin-top: 54px;
+        padding-bottom: 17px;
+    }
+    .image-equi {
+        width: 278px;
+    }
+    .div-eye {
+        position: absolute;
+        width: 278px;
+        height: 278px;
+    }
+    h1 {
+        margin-bottom: -4px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .price-and-time {
+        margin-top: -3px;
+    }
+    .image-eth {
+        top: 18%;
+    }
+    .line {
+        margin-top: 16px;
+    }
+    .text-creator {
+        margin-top: 7px;
+    }
+    .text-time, .text-eth, .text-creator {
+        font-size: 15px;
+    }
+}
